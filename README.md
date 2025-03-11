@@ -1,7 +1,7 @@
 
 Create a custom template for your organisation standards to ease the project setup by providing the boiler plate code.
 
-1. To create package, folder '.template.config' to be created under the project.
+1. To create package or template, first step is to create folder '.template.config' under the project.
 2. template.json should be added under it. 
 
 ```JSON
