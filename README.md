@@ -5,11 +5,11 @@ Create a custom template for your organisation standards to ease the project set
 dotnet new install .\ 
 
 # To overwrite or replace existing template
-dotnet new install <**Project Path>** --force
+dotnet new install <**Project folder root Path>** --force
 
 # Uninstall template using below command.
 Navigate to project path and run below command.
 
-dotnet new uninstall <**project path>**
+dotnet new uninstall <***Project folder root path>**
 
 
