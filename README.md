@@ -75,4 +75,29 @@ Navigate to project path and run below command.
 
 dotnet new uninstall <***Project folder root path>**
 
+# So far you learnt how to add a custom template. But that's still in your machine. How would you share it to teammates (with out sharing code :) ).
+
+ **Here is how you do it.**
+ 
+ Create a nuget package and share it to the team.
+ 
+1. To be able to create a package, we need to add to the .csproj settings
+   ```XML
+   <IsPackable>true</IsPackable>
+   ```
+2. From Project menu you can click on pack, or run below command.
+   dotnet pack
+3. You can find <package name>.nupkg file in the bin folder.
+4. you can share the .nupkg file to your team, and ask to run below command.
+   dotnet new install path-to-your-package.nupkg
+
+Just to see how the template looks in visual studio
+
+![image](https://github.com/user-attachments/assets/c767b70d-40bc-40c8-a453-1830683af0ce)
+
+
+
+
+   
+
 
