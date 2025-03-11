@@ -10,6 +10,6 @@ dotnet new install <Project Path> --force
 # Uninstall template using below command.
 Navigate to project path and run below command.
 
-dotnet new uninstall 'project path'
+dotnet new uninstall <project path>
 
 
