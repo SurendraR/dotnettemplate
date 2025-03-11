@@ -4,6 +4,7 @@ Create a custom template for your organisation standards to ease the project set
 1. To create package, folder '.template.config' to be created under the project.
 2. template.json should be added under it. 
 
+```JSON
 {
   "$schema": "http://json.schemastore.org/template",
   "author": "surendra Rayapati",
@@ -33,22 +34,24 @@ Create a custom template for your organisation standards to ease the project set
     }
   ]
 }
+```
+
 
 # Understand above JSON file.
 
-**$schema: ** This property specifies the JSON schema that should be used to validate the template.json file. It helps ensure that your template definition is correctly formatted. The URL points to a schema definition that describes the expected structure and properties of a template.json file.
+**$schema:** This property specifies the JSON schema that should be used to validate the template.json file. 
 
 **author:** Specifies the author or creator of the template. This is a descriptive field.
 
-**classifications:** An array of strings that categorize the template. These classifications help users find your template when searching or browsing available templates. In your example, the template is classified as a "WebAPI", "Swagger", and "Application Insights" project.
+**classifications:** An array of strings that categorize the template. These classifications help users find your template when searching or browsing available templates.
 
-**identity: **A unique identifier for the template. This is used internally by the .NET SDK to distinguish between different templates. It should be unique across all templates. A common convention is to use a namespaced identifier.
+**identity:** A unique identifier for the template. This is used internally by the .NET SDK to distinguish between different templates. It should be unique across all templates. A common convention is to use a namespaced identifier.
 
-**name: **The user-friendly name of the template that will be displayed to users when they are creating a new project.
+**name:** The user-friendly name of the template that will be displayed to users when they are creating a new project.
 
 **shortName:** A short, command-line friendly name for the template. Users can use this name with the dotnet new command to create a project from your template (e.g., dotnet new apitemplate).
 
-tags: A set of tags that provide additional information about the template.
+**tags:** A set of tags that provide additional information about the template.
 
 **language:** Specifies the programming language used by the template (e.g., "C#").
 
